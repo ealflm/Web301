@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Libre+Franklin&family=Lilita+One&family=Long+Cang&family=Hubballi&display=swap');
 
 * {
     margin: 0;
@@ -37,11 +36,7 @@ h1 {
 }
 
 .three {
-    background-color: rgb(67, 91, 175);
-}
-
-.four {
-    background-color: rgb(191, 64, 191);
+    background-color: white
 }
 
 .offcanvas-body a {
@@ -104,10 +99,10 @@ h1 {
 .rounded-button {
     background-color: transparent;
     border: 1px solid white;
-    border-radius: 8px; /* Adjust the value for the desired level of rounding */
+    border-radius: 8px;
     color: white;
-    padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 16px; /* Adjust font size as needed */
+    padding: 10px 20px;
+    font-size: 16px; 
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     font-size: 100%;
@@ -144,7 +139,28 @@ h1 {
     background: linear-gradient(252deg, #0E0503 70%, #414041 100%)
 }
 
+.header-three {
+    height: 15vh;
+    text-align: center;
+    background: linear-gradient(180deg, #0E0503 0%, white 100%)
+}
+
 .header-two h1 {
+    margin-top: 50%;
+    margin: 0;
+    color: white;
+    font-size: 64px;
+    font-family: Lilita One;
+    font-weight: 400;
+    line-height: 89.60px;
+    word-wrap: break-word;
+    text-shadow: 0 0 black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-three h1 {
     margin-top: 50%;
     margin: 0;
     color: white;
@@ -175,15 +191,15 @@ h1 {
 .slide {
     min-width: 33.33%;
     box-sizing: border-box;
+    position: relative;
 }
 
-img {
+.slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Optional: Add navigation buttons */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -196,8 +212,100 @@ img {
 .prev { left: 10px; }
 .next { right: 10px; }
 
+.slider-container2 {
+    width: 100%;
+    height: 57vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.bottom-three {
+    height: 28vh;
+    text-align: center;
+    color: white;
+    font-family: Lilita One;
+    font-weight: 400;
+    line-height: 67.20px;
+    word-wrap: break-word
+}
+
+.slider2 {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide2 {
+    min-width: 33.33%;
+    box-sizing: border-box;
+}
+
+.slider2 img {
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+}
+
+.prev2, .next2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+.prev2 { left: 10px; }
+.next2 { right: 10px; }
+
+.black-button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 64px;
+    width: 280px;
+}
+
+.black-button-lg {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 48px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 90px;
+    width: 30vw;
+    min-width: 400px;
+}
+
+.slide2-text {
+    color: black;
+    font-size: 24px;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    line-height: 33.60px;
+    word-wrap: break-word;
+    margin-top: 20px
+}
+
 @media (max-width: 1024px) {
     .slide {
+        min-width: 50%;
+    }
+    .slide2 {
         min-width: 50%;
     }
 }
@@ -230,4 +338,155 @@ img {
     .slide {
         min-width: 100%;
     }
+    .slide2 {
+        min-width: 100%;
+    }
+}
+
+.txt1 {
+    color: white;
+    font-size: 28px;
+    font-family: Exo;
+    font-weight: 800;
+    line-height: 44.80px;
+    word-wrap: break-word
+}
+
+.txt2 {
+    color: white;
+    font-size: 20px;
+    font-family: Exo;
+    font-weight: 400;
+    line-height: 33.60px;
+    word-wrap: break-word
+}
+
+.txt2 i {
+    display: inline-block;
+    width: 20px; 
+    text-align: center;
+    margin-right: 10px;
+}
+
+.four {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}
+
+.map-container {
+    flex: 1; 
+    position: relative;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    padding-bottom: 20px;
+}
+
+.txt1,
+.txt2 {
+    color: white; 
+    padding-left: 10px;
+}
+
+.bottom-logo {
+    width: 100px;
+}
+
+.txt {
+    color: white;
+    font-size: 12px;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    line-height: 16.80px;
+    word-wrap: break-word
+}
+
+.social {
+    width: 50px;
+}
+
+.text-impress {
+    color: white;
+    font-size: 64px;
+    font-family: Long Cang;
+    font-weight: 400;
+    line-height: 89.60px;
+    word-wrap: break-word;
+
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+.text-perfect {
+    color: white;
+    font-size: 16px;
+    font-family: Hubballi;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+
+    position: absolute;
+    top: 15%;
+    right: 10%;
+}
+
+.text-pancake {
+    color: white;
+    font-size: 64px;
+    font-family: Long Cang;
+    font-weight: 400;
+    line-height: 89.60px;
+    word-wrap: break-word;
+
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+.text-try {
+    color: white;
+    font-size: 16px;
+    font-family: Hubballi;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+}
+
+.text-grill {
+    color: white;
+    font-size: 64px;
+    font-family: Long Cang;
+    font-weight: 400;
+    line-height: 89.60px;
+    word-wrap: break-word;
+
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.text-chill {
+    color: white;
+    font-size: 16px;
+    font-family: Hubballi;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
 }
