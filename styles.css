@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    max-width: 100vw;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+h1 {
+    color: rgb(226, 226, 226);
+    text-shadow: 1px 1px 4px #000;
+}
+
+.one {
+    background-image: url('Assets/first.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.two {
+    background-color: rgb(211, 79, 79);
+}
+
+.three {
+    background-color: rgb(67, 91, 175);
+}
+
+.four {
+    background-color: rgb(191, 64, 191);
+}
+
+.offcanvas-body a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    font-family: Exo;
+    font-weight: 400;
+    line-height: 33.60px;
+    word-wrap: break-word
+}
+
+.logo-img {
+    max-width: 75%;
+    height: auto;
+    width: 75%;
+    min-width: 100px;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input {
+  padding: 10px 30px 10px 50px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 100px;
+  color: white;
+  outline: none;
+  width: 14vw;
+}
+
+.fa-search {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.cart-icon {
+    width: 50px;
+}
+
+.user-icon {
+    width: 35px;
+}
+
+.cart-text {
+    color: white;
+    font-size: 1.5vw;
+    font-family: Exo;
+    font-weight: 400;
+    line-height: 33.60px;
+    word-wrap: break-word
+}
+
+.rounded-button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px; /* Adjust the value for the desired level of rounding */
+    color: white;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 100%;
+    font-family: Exo;
+    font-weight: 400;
+    line-height: 33.60px;
+    word-wrap: break-word;
+    width: 16vw;
+    min-width: 200px;
+}
+
+.rounded-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.vertical-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.rounded-button {
+    margin: 5px;
+}
+
+.navbar-toggler {
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .cart-text, .user-icon {
+        display: none;
+    }
+    .search-container {
+        display: none;
+    }
+    .offcanvas-body a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-family: Exo;
+        font-weight: 400;
+        line-height: 33.60px;
+        word-wrap: break-word
+    }
+    .one {
+        position: relative;
+    }
+    .vertical-buttons {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        text-align: right;
+    }
+}
