@@ -301,48 +301,6 @@ h1 {
     margin-top: 20px
 }
 
-@media (max-width: 1024px) {
-    .slide {
-        min-width: 50%;
-    }
-    .slide2 {
-        min-width: 50%;
-    }
-}
-
-@media (max-width: 767px) {
-    .cart-text, .user-icon {
-        display: none;
-    }
-    .search-container {
-        display: none;
-    }
-    .offcanvas-body a {
-        text-decoration: none;
-        color: white;
-        font-size: 24px;
-        font-family: Exo;
-        font-weight: 400;
-        line-height: 33.60px;
-        word-wrap: break-word
-    }
-    .one {
-        position: relative;
-    }
-    .vertical-buttons {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        text-align: right;
-    }
-    .slide {
-        min-width: 100%;
-    }
-    .slide2 {
-        min-width: 100%;
-    }
-}
-
 .txt1 {
     color: white;
     font-size: 28px;
@@ -490,3 +448,110 @@ h1 {
     bottom: 10%;
     left: 40%;
 }
+
+.circle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(14, 5, 3, 0.5);
+    color: #fff; 
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+@media (max-width: 1024px) {
+    .slide {
+        min-width: 50%;
+    }
+    .slide2 {
+        min-width: 50%;
+    }
+    .txt1 {
+        color: white;
+        font-size: 22px;
+        font-family: Exo;
+        font-weight: 800;
+        line-height: 38px;
+        word-wrap: break-word
+    }
+
+    .txt2 {
+        color: white;
+        font-size: 18px;
+        font-family: Exo;
+        font-weight: 400;
+        line-height: 28px;
+        word-wrap: break-word
+    }
+
+    .header-two h1 {
+        font-size: 45px;
+        line-height: 70px;
+    }
+
+    .header-three h1 {
+        font-size: 45px;
+        line-height: 70px;
+    }
+
+    .black-button-lg {
+        font-size: 30px;
+        width: 30vw;
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cart-text, .user-icon {
+        display: none;
+    }
+    .search-container {
+        display: none;
+    }
+    .offcanvas-body a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-family: Exo;
+        font-weight: 400;
+        line-height: 33.60px;
+        word-wrap: break-word
+    }
+    .one {
+        position: relative;
+    }
+    .vertical-buttons {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        text-align: right;
+    }
+    .slide {
+        min-width: 100%;
+    }
+    .slide2 {
+        min-width: 100%;
+    }
+
+    .txt1 {
+        color: white;
+        font-size: 19px;
+        font-family: Exo;
+        font-weight: 800;
+        line-height: 32px;
+        word-wrap: break-word
+    }
+
+    .txt2 {
+        color: white;
+        font-size: 16px;
+        font-family: Exo;
+        font-weight: 400;
+        line-height: 22px;
+        word-wrap: break-word
+    }
+}
+
