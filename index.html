@@ -66,14 +66,66 @@
                 </div>
             </section>
             <section class="two">
-                <h1>Second Page</h1>
+                <div class="header-two">
+                    <h1>New Flavor</h1>
+                </div>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="Assets/1.jpg" alt="Slide 1"></div>
+                        <div class="slide"><img src="Assets/2.png" alt="Slide 2"></div>
+                        <div class="slide"><img src="Assets/3.jpg" alt="Slide 3"></div>
+                        <!-- Add more slides as needed -->
+                    </div>
+                      <!-- Optional: Navigation buttons -->
+                      <div class="prev" onclick="changeSlide(-1)">&#9665;</div>
+                      <div class="next" onclick="changeSlide(1)">&#9655;</div>
+                </div>
             </section>
             <section class="three">
-                <h1>Third Page</h1>
+                <div class="header-two">
+                    <h1>Main Menu</h1>
+                </div>
+                <div class="slider-container2">
+                    <div class="slider2">
+                        <div class="slide2"><img src="Assets/a1.png" alt="Slide 1"></div>
+                        <div class="slide2"><img src="Assets/a2.png" alt="Slide 2"></div>
+                        <div class="slide2"><img src="Assets/a3.png" alt="Slide 3"></div>
+                        <!-- Add more slides as needed -->
+                    </div>
+                      <!-- Optional: Navigation buttons -->
+                      <div class="prev2" onclick="changeSlide2(-1)">&#9665;</div>
+                      <div class="next2" onclick="changeSlide2(1)">&#9655;</div>
+                </div>
             </section>
             <section class="four">
                 <h1>Web Dev</h1>
             </section>
         </div>
+        <script>
+            let currentIndex = 0;
+            const slides = document.querySelector('.slider');
+            const totalSlides = document.querySelectorAll('.slide').length;
+
+            function changeSlide(direction) {
+                var screenWidth = window.innerWidth;
+                var index = 3;
+                if (screenWidth <= 767) {
+                    index = 1;
+                } else if (screenWidth <= 1024) {
+                    index = 2;
+                }
+                currentIndex += direction;
+
+                if (currentIndex >= totalSlides - (index - 1)) {
+                    currentIndex = totalSlides - index;
+                } else if (currentIndex < 0) {
+                    currentIndex = 0;
+                }
+
+                const translateValue = -currentIndex * (100/index) + '%';
+                slides.style.transform = `translateX(${translateValue})`;
+            }
+        </script>
+
     </body>
 </html>

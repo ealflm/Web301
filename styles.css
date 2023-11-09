@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Lilita+One&display=swap');
 
 * {
     margin: 0;
@@ -137,6 +138,70 @@ h1 {
     text-align: left;
 }
 
+.header-two {
+    height: 15vh;
+    text-align: center;
+    background: linear-gradient(252deg, #0E0503 70%, #414041 100%)
+}
+
+.header-two h1 {
+    margin-top: 50%;
+    margin: 0;
+    color: white;
+    font-size: 64px;
+    font-family: Lilita One;
+    font-weight: 400;
+    line-height: 89.60px;
+    word-wrap: break-word;
+    text-shadow: 0 0 black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-container {
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 33.33%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Optional: Add navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+@media (max-width: 1024px) {
+    .slide {
+        min-width: 50%;
+    }
+}
+
 @media (max-width: 767px) {
     .cart-text, .user-icon {
         display: none;
@@ -161,5 +226,8 @@ h1 {
         bottom: 20px;
         right: 20px;
         text-align: right;
+    }
+    .slide {
+        min-width: 100%;
     }
 }
